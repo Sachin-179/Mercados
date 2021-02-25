@@ -1,0 +1,14 @@
+{% extends 'application/index.html' %}
+{% block body %}
+<div class="container">
+<!--  <h2>Login</h2>-->
+    <br>
+    <br>
+    <br>
+  <form method="post" style="max-width: 200px; margin: 0 auto;">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+</div>
+{% endblock %}
